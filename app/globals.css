@@ -4,6 +4,7 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  @apply bg-gradient-to-br from-emerald-700 via-emerald-900 to-emerald-950;
 }
 
 @layer utilities {

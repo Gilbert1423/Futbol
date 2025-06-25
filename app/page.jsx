@@ -23,7 +23,7 @@ export default function Home() {
   }, [])
 
   return (
-    <div className="min-h-screen bg-main-gradient overflow-x-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-emerald-700 via-emerald-900 to-emerald-950 overflow-x-hidden">
       <Navbar />
       <Hero />
       <About />

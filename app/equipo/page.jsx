@@ -39,7 +39,7 @@ export default function EquipoPage() {
 
   const players = [
     {
-      name: "Carlos Rodríguez",
+      name: "Bori",
       position: "Portero",
       number: "1",
       age: 28,
@@ -92,6 +92,60 @@ export default function EquipoPage() {
       image: "/placeholder.svg?height=400&width=300",
       stats: { partidos: 41, goles: 2, asistencias: 8 },
     },
+      {
+      name: "Roberto Silva",
+      position: "Lateral Derecho",
+      number: "3",
+      age: 27,
+      nationality: "Uruguay",
+      image: "/placeholder.svg?height=400&width=300",
+      stats: { partidos: 41, goles: 2, asistencias: 8 },
+    },
+      {
+      name: "Roberto Silva",
+      position: "Lateral Derecho",
+      number: "3",
+      age: 27,
+      nationality: "Uruguay",
+      image: "/placeholder.svg?height=400&width=300",
+      stats: { partidos: 41, goles: 2, asistencias: 8 },
+    },
+      {
+      name: "Roberto Silva",
+      position: "Lateral Derecho",
+      number: "3",
+      age: 27,
+      nationality: "Uruguay",
+      image: "/placeholder.svg?height=400&width=300",
+      stats: { partidos: 41, goles: 2, asistencias: 8 },
+    },
+      {
+      name: "Roberto Silva",
+      position: "Lateral Derecho",
+      number: "3",
+      age: 27,
+      nationality: "Uruguay",
+      image: "/placeholder.svg?height=400&width=300",
+      stats: { partidos: 41, goles: 2, asistencias: 8 },
+    },
+      {
+      name: "Roberto Silva",
+      position: "Lateral Derecho",
+      number: "3",
+      age: 27,
+      nationality: "Uruguay",
+      image: "/placeholder.svg?height=400&width=300",
+      stats: { partidos: 41, goles: 2, asistencias: 8 },
+    },
+      {
+      name: "Roberto Silva",
+      position: "Lateral Derecho",
+      number: "3",
+      age: 27,
+      nationality: "Uruguay",
+      image: "/placeholder.svg?height=400&width=300",
+      stats: { partidos: 41, goles: 2, asistencias: 8 },
+    },
   ]
 
   const staff = [
@@ -102,9 +156,10 @@ export default function EquipoPage() {
       image: "/placeholder.svg?height=300&width=250",
     },
     {
-      name: "Ana Martínez",
-      role: "Preparadora Física",
-      experience: "8 años",
+      name: "Carlos Anchelotti",
+      role: "Mister",
+      // role: "Preparadora Física",
+      experience: "30 años",
       image: "/placeholder.svg?height=300&width=250",
     },
     {
@@ -116,7 +171,7 @@ export default function EquipoPage() {
   ]
 
   return (
-    <div className="min-h-screen bg-main-gradient overflow-x-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-emerald-700 via-emerald-900 to-emerald-950 overflow-x-hidden">
       <Navbar />
 
       {/* Hero Section */}

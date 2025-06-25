@@ -11,10 +11,10 @@ export default function Stats() {
   const [counters, setCounters] = useState([0, 0, 0, 0])
 
   const stats = [
-    { number: 15, label: "Trofeos Ganados", suffix: "" },
-    { number: 250, label: "Partidos Jugados", suffix: "+" },
-    { number: 89, label: "Porcentaje de Victorias", suffix: "%" },
-    { number: 8, label: "Años de Historia", suffix: "" },
+    { number: 0, label: "Trofeos Ganados", suffix: "" },
+    { number: 1, label: "Partidos Jugados", suffix: "+" },
+    { number: 20, label: "Porcentaje de Victorias", suffix: "%" },
+    { number: 1, label: "Años de Historia", suffix: "" },
   ]
 
   useEffect(() => {

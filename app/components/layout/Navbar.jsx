@@ -22,7 +22,7 @@ export default function Navbar() {
     { href: "/", label: "Inicio", icon: Home },
     { href: "/equipo", label: "Equipo", icon: Users },
     { href: "/partidos", label: "Partidos", icon: Calendar },
-    { href: "/trofeos", label: "Trofeos", icon: Trophy },
+    // { href: "/trofeos", label: "Trofeos", icon: Trophy },
     { href: "/contacto", label: "Contacto", icon: Phone },
   ]
 

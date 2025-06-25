@@ -108,16 +108,16 @@ export default function PartidosPage() {
   ]
 
   const estadisticas = {
-    temporada: "2023-24",
-    partidos: 18,
-    victorias: 12,
-    empates: 4,
-    derrotas: 2,
-    golesFavor: 34,
-    golesContra: 15,
-    diferencia: 19,
-    puntos: 40,
-    posicion: 2,
+    temporada: "2025-26",
+    partidos: 1,
+    victorias: 0,
+    empates: 0,
+    derrotas: 1,
+    golesFavor: 0,
+    golesContra: 10,
+    diferencia: 0,
+    puntos: 0,
+    posicion: 1,
   }
 
   const getResultColor = (result) => {
@@ -170,7 +170,7 @@ export default function PartidosPage() {
   }, [activeTab])
 
   return (
-    <div className="min-h-screen bg-main-gradient overflow-x-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-emerald-700 via-emerald-900 to-emerald-950 overflow-x-hidden">
       <Navbar />
 
       {/* Hero Section */}

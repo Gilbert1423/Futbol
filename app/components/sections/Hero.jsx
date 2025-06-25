@@ -35,7 +35,7 @@ export default function Hero() {
   }, [])
 
   return (
-    <section ref={heroRef} className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section ref={heroRef} className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-emerald-700 via-emerald-900 to-emerald-950">
       <div className="absolute inset-0">
         <div className="absolute top-20 left-10 w-2 h-2 bg-emerald-400 rounded-full particle"></div>
         <div className="absolute top-40 right-20 w-3 h-3 bg-teal-400 rounded-full particle"></div>
@@ -119,9 +119,9 @@ export default function Hero() {
           className="grid grid-cols-3 gap-8 mt-16 max-w-2xl mx-auto mb-20"
         >
           {[
-            { number: "15", label: "Trofeos", icon: Trophy },
-            { number: "250+", label: "Partidos", icon: Zap },
-            { number: "8", label: "Años", icon: Star },
+            { number: "0", label: "Trofeos", icon: Trophy },
+            { number: "1+", label: "Partidos", icon: Zap },
+            { number: "1", label: "Años", icon: Star },
           ].map((stat, index) => (
             <motion.div
               key={index}
