@@ -3,10 +3,12 @@ import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { Menu, X, Home, Users, Calendar, Trophy, Phone } from "lucide-react"
 import Link from "next/link"
+import { usePathname } from "next/navigation"
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+  const pathname = usePathname()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -58,11 +60,13 @@ export default function Navbar() {
                 <Link href={item.href}>
                   <motion.div
                     whileHover={{ scale: 1.1, y: -2 }}
-                    className="flex items-center space-x-2 text-white hover:text-emerald-400 transition-colors group"
+                    className={`flex items-center space-x-2 transition-colors group relative ${pathname === item.href ? "text-emerald-400 font-bold" : "text-white hover:text-emerald-400"}`}
                   >
                     <item.icon size={18} />
                     <span className="font-semibold">{item.label}</span>
-                    <div className="w-0 h-0.5 bg-emerald-400 group-hover:w-full transition-all duration-300"></div>
+                    {pathname === item.href && (
+                      <span className="absolute -bottom-2 left-0 right-0 h-1 rounded bg-emerald-400"></span>
+                    )}
                   </motion.div>
                 </Link>
               </motion.div>
@@ -97,7 +101,7 @@ export default function Navbar() {
                   className="mb-4"
                 >
                   <Link href={item.href}>
-                    <div className="flex items-center space-x-3 text-white hover:text-emerald-400 transition-colors p-3 rounded-lg hover:bg-emerald-900/50">
+                    <div className={`flex items-center space-x-3 transition-colors p-3 rounded-lg ${pathname === item.href ? "text-emerald-400 font-bold bg-emerald-900/50" : "text-white hover:text-emerald-400 hover:bg-emerald-900/50"}`}>
                       <item.icon size={20} />
                       <span className="font-semibold">{item.label}</span>
                     </div>

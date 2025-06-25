@@ -73,7 +73,7 @@ export default function Stats() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           {stats.map((stat, index) => (
             <motion.div
               key={index}
@@ -83,9 +83,9 @@ export default function Stats() {
               whileHover={{ scale: 1.05, y: -10 }}
               className="text-center group"
             >
-              <div className="relative flex flex-col items-center justify-center min-h-56">
+              <div className="relative flex flex-col items-center justify-center min-h-56 h-56">
                 <div className="absolute inset-0 bg-gradient-to-br from-yellow-400/20 to-orange-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                <div className="relative bg-slate-800/30 backdrop-blur-lg rounded-3xl p-8 border border-slate-700/50 group-hover:border-yellow-400/50 transition-all duration-500 flex flex-col items-center justify-center min-h-56">
+                <div className="relative bg-slate-800/30 backdrop-blur-lg rounded-3xl p-8 border border-slate-700/50 group-hover:border-yellow-400/50 transition-all duration-500 flex flex-col items-center justify-center min-h-56 h-56">
                   <div className="text-6xl md:text-7xl font-black text-transparent bg-clip-text bg-gradient-to-br from-yellow-400 to-orange-500 mb-4">
                     {counters[index]}
                     {stat.suffix}
@@ -102,7 +102,7 @@ export default function Stats() {
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
-          className="mt-20"
+          className="mt-32"
         >
           <h3 className="text-3xl font-bold text-white text-center mb-12">Logros Destacados</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

@@ -50,7 +50,7 @@ export default function Hero() {
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
           transition={{ duration: 1, ease: "easeOut" }}
-          className="mb-8"
+          className="mb-8 mt-12"
         >
           <div ref={ballRef} className="w-32 h-32 mx-auto mb-8 relative">
             <div className="w-full h-full bg-gradient-to-br from-white to-gray-300 rounded-full shadow-2xl flex items-center justify-center">
@@ -116,7 +116,7 @@ export default function Hero() {
           initial={{ y: 100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1, delay: 1.4 }}
-          className="grid grid-cols-3 gap-8 mt-16 max-w-2xl mx-auto"
+          className="grid grid-cols-3 gap-8 mt-16 max-w-2xl mx-auto mb-20"
         >
           {[
             { number: "15", label: "Trofeos", icon: Trophy },

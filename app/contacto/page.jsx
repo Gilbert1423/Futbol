@@ -114,7 +114,7 @@ export default function ContactoPage() {
   }, [])
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-emerald-950 via-teal-900 to-cyan-950 overflow-x-hidden">
+    <div className="min-h-screen bg-main-gradient overflow-x-hidden">
       <Navbar />
 
       {/* Hero Section */}

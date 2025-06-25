@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body className="min-h-screen bg-custom-gradient-1 text-white">
         <ScrollToTop />
         {children}
       </body>

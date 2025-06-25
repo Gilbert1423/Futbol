@@ -150,6 +150,20 @@ export default function Footer() {
                 <span>para los amantes del fútbol</span>
               </motion.div>
             </div>
+            <div className="mt-4 text-center text-xs text-gray-500">
+              <span>
+                Desarrollado con pasión por <span className="font-bold text-white">Gilbert Lucas</span> ⚽️ |
+                ¿Quieres un sitio web increíble para tu equipo o negocio?
+                <a
+                  href="https://wa.me/584141038105"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-purple-400 font-semibold hover:underline ml-1"
+                >
+                  ¡Contáctame y llevemos tu proyecto al siguiente nivel!
+                </a>
+              </span>
+            </div>
           </div>
         </div>
       </div>
